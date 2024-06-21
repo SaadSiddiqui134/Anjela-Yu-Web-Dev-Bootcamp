@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 748px;
+        width: 748px;
+        display: grid;
+        grid-template-rows: 410px 300px 20px;
+        grid-template-columns: 320px 1fr 50px;
+        gap: 9px;
+
+        background-color: #232629;
+      }
+
+      .os {
+        background-color: #e72f24;
+      }
+      .ts {
+        background-color: #f0f1ec;
+      }
+      .ths {
+        background-color: #f0f1ec;
+      }
+      .fs {
+        background-color: #f0f1ec;
+      }
+
+      .fis {
+        background-color: #f0f1ec;
+      }
+      .ss1 {
+        background-color: #004592;
+        border-bottom: 10px solid #232629;
+      }
+      .ss2 {
+        background-color: #f0f1ec;
+      }
+
+      .ss {
+        gap: 0px;
+        display: grid;
+        grid-template-rows: 130px 200px;
+
+        background-color: #f0f1ec;
+      }
+
+      .ses {
+        background-color: #f0f1ec;
+      }
+
+      .es {
+        background-color: #232629;
+        display: grid;
+        grid-template-columns: 198px 153px;
+        gap: 9px;
+      }
+
+      .es1 {
+        background-color: #f9d01e;
+      }
+
+      .es2 {
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="square os"></div>
+      <div class="square ts"></div>
+      <div class="square ths"></div>
+      <div class="square fs"></div>
+      <div class="square fis"></div>
+      <div class="square ss">
+        <div class="square ss1"></div>
+        <div class="square ss2"></div>
+      </div>
+      <div class="square ses"></div>
+      <div class="square es">
+        <div class="es1"></div>
+        <div class="es2"></div>
+      </div>
+    </div>
+  </body>
+</html>
